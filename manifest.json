@@ -6,12 +6,12 @@
     "default_popup": "popup.html"
   },
   "background": {
-    "js": ["background.js"]
+    "scripts": ["background.js"]
   },
   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
   "name": "Demo Live HTML/CSS Cleaner ",
   "version": "0.1.0",
-  "description": "Use to remove specific formatting, elements, tags & styles so its easier to
+  "description": "Use to remove specific formatting, elements, tags & styles so its easier
   to copy into Voter Guide Editor.",
   "content_scripts": [{
     "css": ["styles.css"],
