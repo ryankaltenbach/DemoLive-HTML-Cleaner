@@ -11,23 +11,17 @@
 //     chrome.tabs.executeScript(tab.id, {code:"alert()"});
 //   }
 // });
-
-
-
 // function checking if button null
 // var el = document.getElementById('iconBtn');
 // if(el){
 //   el.addEventListener('click', swapper, false);
 // }
-
-
-
 // This click event is when the button icon (page action) is clicked it gets fired.
 // document.getElementById('iconBtn').addEventListener('click', test);
 
 console.log('background running');
 
-chrome.browserAction.onclicked.addListener(buttonclicked)
+chrome.browserAction.onClicked.addListener(buttonClicked)
 
 function buttonClicked() {
   console.log("button clicked! ");

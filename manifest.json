@@ -3,7 +3,8 @@
   "icons":{"120":"images/ballot-120.png"},
   "browser_action": {
     "default_icon": "images/ballot-120.png",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "Demo Live HTML cleaner"
   },
   "background": {
     "scripts": ["background.js"]
@@ -15,8 +16,8 @@
   to copy into Voter Guide Editor.",
   "content_scripts": [{
     "css": ["styles.css"],
-    "js": ["content.js"],
+    "js": ["content.js","popup.js"],
     "html":["popup.html"],
-    "matches": ["file://*"]
+    "matches": ["<all_urls>"]
   }]
 }
