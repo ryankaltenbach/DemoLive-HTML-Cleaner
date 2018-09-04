@@ -13,16 +13,16 @@
 
 // Code to receive a message
 console.log("Chrome extension go?");
-
-chrome.runtime.onMessage.addListener(gotMessage);
-
-function gotMessage(message, sender, sendResponse) {
-  console.log(message);
-  let paragraphs = document.getElementsByTagName('p');
-  for (elt of paragraphs) {
-    elt.innerHTML = message.txt;
-  }
-}
+//
+// chrome.runtime.onMessage.addListener(gotMessage);
+//
+// function gotMessage(message, sender, sendResponse) {
+//   console.log(message);
+//   let paragraphs = document.getElementsByTagName('p');
+//   for (elt of paragraphs) {
+//     elt.innerHTML = message.txt;
+//   }
+// }
 
 
 // //  This was a function I got off of stack overflow
@@ -62,3 +62,6 @@ function gotMessage(message, sender, sendResponse) {
 // const str = "<body><div><table><tr><td><p>test</p></td></tr></table></div></body>";
 //
 // parseHTML(str, arr);
+
+
+chrome.runtime.sendMessage( "TEST");

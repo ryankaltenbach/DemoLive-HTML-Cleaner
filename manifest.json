@@ -20,6 +20,6 @@
     "js": ["content.js","popup.js"],
     "html":["popup.html"],
     "matches": ["<all_urls>"],
-    "all_frames": true,
+    "all_frames": true
   }]
 }
