@@ -9,7 +9,7 @@
 // $('button').click(function() {
 //   $( "<table>" ).replaceWith( "<p>" )
 // )};
-document.getElementById('iconBtn').addEventListener('click', test);
+// document.getElementById('iconBtn').addEventListener('click', test);
 //  This was a function I got off of stack overflow
 function parseHTML(html, elements){
     // Parse the HTML

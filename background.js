@@ -15,12 +15,20 @@
 
 
 // function checking if button null
-var el = document.getElementById('iconBtn');
-if(el){
-  el.addEventListener('click', swapper, false);
-}
+// var el = document.getElementById('iconBtn');
+// if(el){
+//   el.addEventListener('click', swapper, false);
+// }
 
 
 
 // This click event is when the button icon (page action) is clicked it gets fired.
-document.getElementById('iconBtn').addEventListener('click', test);
+// document.getElementById('iconBtn').addEventListener('click', test);
+
+console.log('background running');
+
+chrome.browserAction.onclicked.addListener(buttonclicked)
+
+function buttonClicked() {
+  console.log("button clicked! ");
+}
