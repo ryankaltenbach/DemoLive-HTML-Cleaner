@@ -3,9 +3,6 @@
 $(function () {
   var
 
-
-
-
 };
 
 
