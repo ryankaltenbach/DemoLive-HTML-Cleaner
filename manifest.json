@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "icons":{"120":"images/ballot-120.png"},
+  "browser_action": {
+    "default_icon": "images/ballot-120.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "name": "Demo Live HTML/CSS Cleaner ",
+  "version": "0.1.0",
+  "description": "Use to remove specific formatting, elements, tags & styles so its easier to
+  to copy into Voter Guide Editor.",
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js","background.js"],
+    "html":["popup.html"],
+    "matches": ["file://*"]
+  }]
+}
